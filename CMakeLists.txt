@@ -8,29 +8,35 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 
-# Install launch files
+# 1. 安装 launch 文件
 install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}/
 )
 
-# Install urdf files
+# 2. 安装 urdf 文件
 install(DIRECTORY urdf
   DESTINATION share/${PROJECT_NAME}/
 )
 
-# Install rviz config files
+# 3. [新增] 安装 config 文件 (这是之前缺少的！)
+install(DIRECTORY config
+  DESTINATION share/${PROJECT_NAME}/
+)
+
+# 4. 安装 rviz 配置文件
 install(DIRECTORY rviz
   DESTINATION share/${PROJECT_NAME}/
 )
 
+# 5. [新增] 安装 Python 脚本 (让您可以通过 ros2 run 运行它)
+install(PROGRAMS
+  scripts/move_robot.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
   set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
