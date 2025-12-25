@@ -1,0 +1,56 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/fyt/ros2_ws/src/my_abb_robot/build/my_abb_robot
+-- Install configuration: ""
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//launch
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//launch/gazebo_my_robot.launch.py
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//launch/view_my_robot.launch.py
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//launch/gazebo_demo.launch.py
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//launch/control_sim.launch.py
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//launch/gazebo_with_controllers.launch.py
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//urdf
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//urdf/my_irb1200_backup.urdf.xacro
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//urdf/my_irb1200.urdf.xacro
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//config
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//config/controllers.yaml
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//rviz
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/lib/my_abb_robot/move_robot.py
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/ament_index/resource_index/package_run_dependencies/my_abb_robot
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/ament_index/resource_index/parent_prefix_path/my_abb_robot
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/environment/ament_prefix_path.sh
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/environment/ament_prefix_path.dsv
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/environment/path.sh
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/environment/path.dsv
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/local_setup.bash
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/local_setup.sh
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/local_setup.zsh
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/local_setup.dsv
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/package.dsv
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/ament_index/resource_index/packages/my_abb_robot
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/cmake/my_abb_robotConfig.cmake
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/cmake/my_abb_robotConfig-version.cmake
+-- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/package.xml

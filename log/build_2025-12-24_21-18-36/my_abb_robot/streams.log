@@ -1,0 +1,62 @@
+[0.014s] Invoking command in '/home/fyt/ros2_ws/src/my_abb_robot/build/my_abb_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyt/ros2_ws/install/my_test:/home/fyt/ros2_ws/install/my_package:/opt/ros/humble /usr/bin/cmake /home/fyt/ros2_ws/src/my_abb_robot -DCMAKE_INSTALL_PREFIX=/home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot
+[0.198s] -- The C compiler identification is GNU 11.4.0
+[0.305s] -- The CXX compiler identification is GNU 11.4.0
+[0.321s] -- Detecting C compiler ABI info
+[0.385s] -- Detecting C compiler ABI info - done
+[0.389s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.390s] -- Detecting C compile features
+[0.391s] -- Detecting C compile features - done
+[0.396s] -- Detecting CXX compiler ABI info
+[0.465s] -- Detecting CXX compiler ABI info - done
+[0.465s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.465s] -- Detecting CXX compile features
+[0.465s] -- Detecting CXX compile features - done
+[0.475s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.583s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.686s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.766s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.766s] -- Configured cppcheck include dirs: 
+[0.766s] -- Configured cppcheck exclude dirs and/or files: 
+[0.767s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.769s] -- Added test 'lint_cmake' to check CMake code style
+[0.770s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.774s] -- Added test 'uncrustify' to check C / C++ code style
+[0.775s] -- Configured uncrustify additional arguments: 
+[0.776s] -- Added test 'xmllint' to check XML markup files
+[0.782s] -- Configuring done
+[0.782s] -- Generating done
+[0.782s] -- Build files have been written to: /home/fyt/ros2_ws/src/my_abb_robot/build/my_abb_robot
+[0.784s] Invoked command in '/home/fyt/ros2_ws/src/my_abb_robot/build/my_abb_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyt/ros2_ws/install/my_test:/home/fyt/ros2_ws/install/my_package:/opt/ros/humble /usr/bin/cmake /home/fyt/ros2_ws/src/my_abb_robot -DCMAKE_INSTALL_PREFIX=/home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot
+[0.785s] Invoking command in '/home/fyt/ros2_ws/src/my_abb_robot/build/my_abb_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyt/ros2_ws/install/my_test:/home/fyt/ros2_ws/install/my_package:/opt/ros/humble /usr/bin/cmake --build /home/fyt/ros2_ws/src/my_abb_robot/build/my_abb_robot -- -j4 -l4
+[0.811s] Invoked command in '/home/fyt/ros2_ws/src/my_abb_robot/build/my_abb_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyt/ros2_ws/install/my_test:/home/fyt/ros2_ws/install/my_package:/opt/ros/humble /usr/bin/cmake --build /home/fyt/ros2_ws/src/my_abb_robot/build/my_abb_robot -- -j4 -l4
+[0.818s] Invoking command in '/home/fyt/ros2_ws/src/my_abb_robot/build/my_abb_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyt/ros2_ws/install/my_test:/home/fyt/ros2_ws/install/my_package:/opt/ros/humble /usr/bin/cmake --install /home/fyt/ros2_ws/src/my_abb_robot/build/my_abb_robot
+[0.823s] -- Install configuration: ""
+[0.823s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//launch
+[0.823s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//launch/gazebo_my_robot.launch.py
+[0.823s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//launch/view_my_robot.launch.py
+[0.824s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//launch/gazebo_demo.launch.py
+[0.824s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//launch/control_sim.launch.py
+[0.825s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//launch/gazebo_with_controllers.launch.py
+[0.825s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//urdf
+[0.825s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//urdf/my_irb1200_backup.urdf.xacro
+[0.826s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//urdf/my_irb1200.urdf.xacro
+[0.826s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//config
+[0.826s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//config/controllers.yaml
+[0.827s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot//rviz
+[0.827s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/lib/my_abb_robot/move_robot.py
+[0.828s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/ament_index/resource_index/package_run_dependencies/my_abb_robot
+[0.828s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/ament_index/resource_index/parent_prefix_path/my_abb_robot
+[0.828s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/environment/ament_prefix_path.sh
+[0.828s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/environment/ament_prefix_path.dsv
+[0.828s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/environment/path.sh
+[0.828s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/environment/path.dsv
+[0.828s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/local_setup.bash
+[0.828s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/local_setup.sh
+[0.828s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/local_setup.zsh
+[0.828s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/local_setup.dsv
+[0.828s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/package.dsv
+[0.828s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/ament_index/resource_index/packages/my_abb_robot
+[0.828s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/cmake/my_abb_robotConfig.cmake
+[0.829s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/cmake/my_abb_robotConfig-version.cmake
+[0.829s] -- Installing: /home/fyt/ros2_ws/src/my_abb_robot/install/my_abb_robot/share/my_abb_robot/package.xml
+[0.829s] Invoked command in '/home/fyt/ros2_ws/src/my_abb_robot/build/my_abb_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fyt/ros2_ws/install/my_test:/home/fyt/ros2_ws/install/my_package:/opt/ros/humble /usr/bin/cmake --install /home/fyt/ros2_ws/src/my_abb_robot/build/my_abb_robot
