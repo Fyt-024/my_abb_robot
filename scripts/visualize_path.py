@@ -36,14 +36,31 @@ class PathVisualizer(Node):
             # 如果您的末端不叫 link_6，请修改这里
             t = self.tf_buffer.lookup_transform(
                 'base_link', 
-                'link_6', 
+                'simple_tool', 
                 rclpy.time.Time())
+
+
+            # --- 手动计算尖端位置 ---
+            # 假设工具长度是 0.1米，且沿着工具坐标系的 Z 轴延伸
+            # 我们需要把这个局部偏移转换到 base_link 坐标系下
             
+            from tf2_geometry_msgs import do_transform_point
+            from geometry_msgs.msg import PointStamped
+
+            # 定义尖端在工具坐标系下的位置 (0, 0, 0.1)
+            p_tip = PointStamped()
+            p_tip.point.x = 0.0
+            p_tip.point.y = 0.0
+            p_tip.point.z = 0.2 # 工具长度
+            
+            # 执行变换：工具坐标系 -> 基座坐标系
+            p_transformed = do_transform_point(p_tip, t)
+
             p = Point()
-            p.x = t.transform.translation.x
-            p.y = t.transform.translation.y
-            p.z = t.transform.translation.z
-            
+            p.x = p_transformed.point.x
+            p.y = p_transformed.point.y
+            p.z = p_transformed.point.z
+
             # 只有位置变动超过 1mm 才记录，避免静止时点重叠
             if not self.marker.points or \
                (abs(p.x - self.marker.points[-1].x) > 0.001 or 

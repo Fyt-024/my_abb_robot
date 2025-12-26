@@ -269,5 +269,38 @@
             <parameters>$(find my_abb_robot)/config/controllers.yaml</parameters>
         </plugin>
     </gazebo>
+  <!-- ==================================================== -->
+  <!-- 简易末端工具 (Simple Gripper Tool) - 添加在文件末尾 -->
+  <!-- ==================================================== -->
+  
+  <!-- 定义工具的 Link (一个简单的红色圆柱体) -->
+  <link name="simple_tool">
+    <visual>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/> <!-- 工具长度的一半 -->
+      <geometry>
+        <cylinder radius="0.01" length="0.1"/> <!-- 半径1cm，长10cm的棍子 -->
+      </geometry>
+      <material name="red">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.01" length="0.1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <!-- 定义关节，将工具固定在 link_6 上 -->
+  <joint name="joint_tool" type="fixed">
+    <parent link="link_6"/>
+    <child link="simple_tool"/>
+    <origin xyz="0 0 0" rpy="0 1.5708 0"/> <!-- 旋转90度，让它指向前方 -->
+  </joint>
 
 </robot>
